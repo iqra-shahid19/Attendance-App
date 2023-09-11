@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <!-- firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+    <link rel="stylesheet" href="SignIn & SignUp.css" />
+  </head>
+  <body>
+
+    <div class="form">
+      <h2>SignUp</h2>
+      <!-- First Name -->
+      <div class="name">
+        <label for="first-name">First Name</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          placeholder="First Name"
+        />
+      </div>
+      
+      <!-- Last Name -->
+      <div class="name">
+        <label for="last-name">Last Name</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          placeholder="Last Name"
+        />
+      </div>
+      
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+        />
+      </div>
+      <!--create passWord -->
+      <div class="pass">
+        <label for=" Create password">Create Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+      </div>
+
+       <!-- confirm passWord -->
+       <div class="pass">
+        <label for=" confirm password">Confirm Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+      </div>
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signUp()">Sign Up</button>
+      <!-- Sign In option -->
+      <p>Already have an account ?</p>
+      <span><a href="signIn.html">Sign In</a></span>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
